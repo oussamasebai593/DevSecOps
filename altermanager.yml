@@ -1,0 +1,15 @@
+  GNU nano 6.2                                                                       alertmanager.yml                                                                                
+global:
+  smtp_smarthost: ""
+  smtp_from: ""
+  smtp_auth_username: ""
+  smtp_auth_password: ""
+
+route:
+  receiver: "email-alert"
+
+receivers:
+  - name: "email-alert"
+    email_configs:
+      - to: ""
+
